@@ -5,7 +5,7 @@ Cocktail Drinker                SELECT,                  Cocktails, Type, Ingred
 
 
 
-create user maker@localhost identified by ‘password’[a]
+create user maker@localhost identified by ‘password’
 
 
 grant SELECT, INSERT on awseomecocktails.* to maker@localhost
@@ -16,7 +16,7 @@ grant SELECT, INSERT on awseomecocktails.* to maker@localhost
 create user drinker@locahost identified by ‘password’;
 
 
-grant SELECT on awesomecocktails.* to drinker@localhost;[b]
+grant SELECT on awesomecocktails.* to drinker@localhost;
 
 
 
@@ -504,5 +504,3 @@ where difficultyid = 1;
 update difficulty
 set cocktailid = 5
 where difficultyid = 2;
-[a]insert password
-[b]I found it easier to use the phpmyadmin screen to create users
